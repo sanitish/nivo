@@ -9,11 +9,13 @@ class SearchBar extends Component {
   render() {
 
     return (
-      <div className ="search-bar">
+      <div  className ="search-bar">
          <input
+         type="text"
+         placeholder="Search"
          onChange={event => this.onInputChange(event.target.value)}
          value={this.state.term} />
-         <button onClick ={ () => this.props.onSearchTermChange(this.state.term)}>Search</button>
+         <button onClick={ () => this.props.onSearchTermChange(this.state.term)} >Search</button>
        </div>
     );
   }
