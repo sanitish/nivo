@@ -6,8 +6,25 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/48938155eb24b4ccdde09426066869504c6dab3c/dist/css/bootstrap.min.css">
   </head>
   <body>
-    <h3>Coded by NITISH with love</h3>
-    <div class="container"></div>
+
+  <div id="Greeting">  Coded by NITISH with love</div>
+
+  <div class="container"></div>
+
   </body>
   <script src="/bundle.js"></script>
+
+  <script>
+ function blink() {
+ var div = document.getElementById('Greeting');
+if(div.style.visibility==='hidden')
+{
+div.style.visibility='visible';
+}
+else
+div.style.visibility='hidden';
+}
+window.setInterval(blink ,1000);
+</script>
+
 </html>
